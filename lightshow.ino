@@ -1,25 +1,5 @@
-/*
+
  
-Vixen Lights 3.x - Arduino Generic Serial for Addressable Pixels
- 
-Using this code is pretty straight forward, simply hookup your one wire (WS2811 or WS2812) data line to pin 6 of your Arduino
-and upload this code.  Make sure you have properly installed the FastLED library from http://fastled.io Once you are done, simply
-power your Pixel strips from an external power supply.  Next configure a Generic Serial Controller inside of Vixen Lights 3.x and 
-add 3 x pixels for the number of channels.  Configure the Generic Serial Controller to use 115200, 8, none, and 1.  Then create
-your element and add "Multiple Items (1 x number of pixels).  Finally select your pixel elements and set them as RGB pixels before
-patching them to the controler outputs.  You should now be ready to begin testing.
- 
-For a complete tutorial check out blog.huntgang.com
- 
-Created   November 8th, 2014
-By        Richard Sloan - www.themindfactory.com
-And       David Hunt - blog.huntgang.com
-Version   1.4
- 
-*/
- 
- 
-// You must download and install the library from http://fastled.io/ 
 #include <FastLED.h>
  
 // Sets the maximum number of LEDs that this code will handle to avoid running out of memory
