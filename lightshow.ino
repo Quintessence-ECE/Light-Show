@@ -82,7 +82,6 @@ void setup() {
 }
  
 void loop() {
-  // Set some counter / temporary storage variables
 ///  int cnt;
   int cnt_A;
   int cnt_B;
@@ -100,8 +99,7 @@ void loop() {
  
   // Begin an endless loop to receive and process serial data
   for(;;) {
-    // Set a counter to 0.  This couter keeps track of the pixel colors received.
-///  cnt = 0;
+
 cnt_A = 0;
 cnt_B = 0;
 cnt_C = 0;
@@ -274,6 +272,5 @@ NLD=NUM_LEDS_D;
 
       
     
-    // WOO HOO... We are all done and are ready to start over again!
     }
 }
